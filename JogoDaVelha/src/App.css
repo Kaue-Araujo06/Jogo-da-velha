@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #97b0dd;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    display: flex;
+    gap: 24px;
+}
+
+.game-board{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.board-row{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.square{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.todo-list{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.game-info{
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.game-info::-webkit-scrollbar{
+    width: 8px;
+}
+
+.todo-button{
+    background-color: #d6d6ce;
+    border: 1px solid black;
+    color: white;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.status{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}   
+
+.visible{
+    font-weight: bolder;
+    font-size: 15pt;
+    opacity: 1;
+}
+
+.hidden{
+    opacity: 0;
+}
