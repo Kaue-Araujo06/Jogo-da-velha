@@ -1,9 +1,7 @@
 # Jogo-da-velha (React)
 - projeto simples ensinado no site react.dev, com as sugestões de funções e melhoras do jogo.
 
-## Demonstração
-
-![gif](assets/demo.gif)
+#Demonstração na aba issues
 
 ## Tarefas
 - #1 Apenas para a jogada atual, mostre "Você está na jogada nº..." em vez de um botão :heavy_check_mark:
