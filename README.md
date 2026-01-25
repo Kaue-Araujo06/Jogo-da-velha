@@ -3,7 +3,9 @@
 - projeto simples ensinado no site react.dev, com as sugestões de funções e melhoras do jogo.
 
 ## Demonstração
-![Demonstração do jogo](./assets/demo.gif)
+# TESTE
+
+![gif](assets/demo.gif)
 
 ## Tarefas
 - #1 Apenas para a jogada atual, mostre "Você está na jogada nº..." em vez de um botão :heavy_check_mark:
