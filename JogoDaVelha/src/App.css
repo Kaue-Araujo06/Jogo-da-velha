@@ -26,7 +26,7 @@ body{
     gap: 10px
 }
 
-.board-row{
+.board_row{
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -97,3 +97,39 @@ body{
 .hidden{
     opacity: 0;
 }
+
+.button-icon-layout{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+}
+
+.descend-btn{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.button-icon-layout * {
+    color: #84e989;
+    transition: 0.5s ease-in-out;
+}
+
+.button-icon-layout.active *{
+    color: red;
+}
+
+.button-icon-layout.active .arrow-down-circle{
+    transform: rotate(360deg);
+}
+
+.arrow-down-circle{
+    transform: rotate(180deg);
+}
+
+
+
+
