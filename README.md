@@ -3,7 +3,7 @@
 
 ## Demonstração
 
-![gif](assets/demo.gif.mp4)
+![gif](assets/demo.gif)
 
 ## Tarefas
 - #1 Apenas para a jogada atual, mostre "Você está na jogada nº..." em vez de um botão :heavy_check_mark:
