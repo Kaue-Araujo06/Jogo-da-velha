@@ -35,7 +35,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
       </div>
 
       {[0, 3, 6].map((board_row, index) => (
-        <div key={board_row} className={`board_row horizontal-squares${index + 1}`}>
+        <div key={board_row} className={`board_row`}>
           
           {[0, 1, 2].map((j) => {
             const squareIndex = board_row + j;
@@ -44,19 +44,11 @@ export default function Board({ xIsNext, squares, onPlay }) {
 
             const winnerLine = result?.line;
 
-            squareClasses.push(`horizontal-line${index}`);
-            squareClasses.push(`vertical-line${j}`);
-
-            if (squareIndex === 0 || squareIndex === 4 || squareIndex === 8) {
-              squareClasses.push("diagonal-main");
-            }
-            if(squareIndex === 2 || squareIndex === 4 || squareIndex === 6) {
-              squareClasses.push("diagonal-secondary")
-            }
-
             if ( winnerLine?.includes(squareIndex)) {
               squareClasses.push("winning");
             }
+
+            console.log(squareClasses)
 
             return (
               <Square

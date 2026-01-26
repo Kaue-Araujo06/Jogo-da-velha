@@ -49,7 +49,9 @@ export default function Game() {
       </div>
 
       <div className="game-info">
-        <p className={currentMove <= 0 ? 'hidden' : 'visible'}>
+        <p 
+        className={currentMove <= 0 ? 'hidden' : 'visible'}
+        >
           Present Move is #{currentMove}
         </p>
 
@@ -57,9 +59,8 @@ export default function Game() {
         <DescendingButton onClick={() =>{ 
           setDescending(prev => !prev);
           setDescendingClick(prev => !prev)
-          }} 
-
-          isActiveEffect = {isDescendClick} 
+        }} 
+        isActiveEffect = {isDescendClick} 
           />
 
         <ol className="container-todo">{render}</ol>

@@ -43,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
 .container-todo{
@@ -128,6 +129,10 @@ body{
 
 .arrow-down-circle{
     transform: rotate(180deg);
+}
+
+.square.winning {
+  background-color: #84e989;
 }
 
 
