@@ -1,5 +1,5 @@
 # Jogo-da-velha (React)
-- projeto simples ensinado no site react.dev, com as sugestões de funções e melhoras do jogo.
+- projeto simples ensinado no site react.dev, com as sugestões de funções e melhoras do jogo. (in progress)
 
 # Demonstração do jogo:
 ![Image](https://github.com/user-attachments/assets/58f6c102-f984-4249-9ff2-90c201df55f5)
