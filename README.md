@@ -9,3 +9,4 @@
 - #3 Adicione um botão que permita ordenar os movimentos em ordem crescente ou decrescente. :heavy_check_mark:
 - #4 Quando alguém ganha, destaque os três quadrados que causaram a vitória (in progress)
 - #5 Exiba a localização de cada movimento no formato (linha, coluna) (in progress)
+- #6 add comentários para melhor compreensão de suas funções (in progresss)
