@@ -2,8 +2,8 @@
 export default function DescendingButton({onClick, isActiveEffect}) {
 
     return (
-        <div className={`button-icon-layout ${isActiveEffect ? "active" : ''}`} onClick={onClick}>
-
+        <div className={`button-icon-layout ${isActiveEffect ? "active" : ''}`} onClick={onClick}> 
+        {/*click no button depois*/}
         <button className="descend-btn" type="button" >{isActiveEffect ? "Descending" : "Ascending"}</button>
 
         <svg 
