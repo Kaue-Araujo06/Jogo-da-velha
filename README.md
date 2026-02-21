@@ -9,5 +9,5 @@
 - #2 Reescreva o código Board para usar dois loops para criar os quadrados em vez de codificá-los diretamente no código. :heavy_check_mark:
 - #3 Adicione um botão que permita ordenar os movimentos em ordem crescente ou decrescente. :heavy_check_mark:
 - #4 Quando alguém ganha, destaque os três quadrados que causaram a vitória :heavy_check_mark:
-- #5 Exiba a localização de cada movimento no formato (linha, coluna) (in progress)
-- #6 add comentários para melhor compreensão de suas funções (in progresss)
+- #5 Exiba a localização de cada movimento no formato (linha, coluna) :heavy_check_mark:
+- #6 add comentários para melhor compreensão de suas funções :heavy_check_mark:
