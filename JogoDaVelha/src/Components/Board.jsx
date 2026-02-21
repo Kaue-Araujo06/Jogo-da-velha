@@ -13,16 +13,22 @@ export default function Board({ xIsNext, squares, onPlay }) {
     } else {
       nextSquares[i] = 'O';
     }
-    onPlay(nextSquares);
+
+    const line = Math.floor(i / 3);
+    const column = i % 3
+
+    onPlay(nextSquares, line, column);
   }
 
   const result = calculateWinner(squares);
 
   let status;
+
+  const boardFull = squares.every(square => square !== null)
   
   if (result) {
     status = 'Winner: ' + result.winner;
-  } else if (squares.every(s => s !== null)) {
+  } else if (boardFull) {
     status = 'Empate!';
   } else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
@@ -34,10 +40,11 @@ export default function Board({ xIsNext, squares, onPlay }) {
         {status}
       </div>
 
-      {[0, 3, 6].map((board_row, index) => (
+      {[0, 3, 6].map((board_row, line) => (
         <div key={board_row} className={`board_row`}>
           
-          {[0, 1, 2].map((j) => {
+          {[0, 1, 2].map((j, column) => {
+
             const squareIndex = board_row + j;
 
             const squareClasses = [];
@@ -48,13 +55,14 @@ export default function Board({ xIsNext, squares, onPlay }) {
               squareClasses.push("winning");
             }
 
-            console.log(squareClasses)
 
             return (
               <Square
                 key={squareIndex}
                 className={squareClasses.join(" ")}
                 value={squares[squareIndex]}
+                column={column}
+                line={line}
                 onSquareClick={() => handleClick(squareIndex)}
               />
             );
