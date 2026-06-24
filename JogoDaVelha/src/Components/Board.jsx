@@ -29,7 +29,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
   if (result) {
     status = 'Winner: ' + result.winner;
   } else if (boardFull) {
-    status = 'Empate!';
+    status = 'Draw!';
   } else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }

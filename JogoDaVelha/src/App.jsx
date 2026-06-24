@@ -2,6 +2,19 @@ import { useState } from 'react';
 import Board from './Components/Board';
 import './App.css';
 import DescendingButton from './Components/DescendingButton';
+import NavBar from './Components/NavBar';
+
+
+  const imageUrl = 'image' //for example 
+
+  // menuList as example
+   const listOptions = [
+        {name: 'home'},
+        {name: 'account'},
+        {name: 'ranking'}
+    ]
+
+  // futurely implement a rank system, show in navbar you position ( like ranking: 2#)  
 
 export default function Game() {
   const [history, setHistory] = useState([{squares: Array(9).fill(null), line: null, column: null }]);
@@ -24,15 +37,15 @@ export default function Game() {
     setCurrentMove(nextHistory.length - 1);
   }
 
-  // Função para pular um movimento
+  // function jump to next move
   function jumpTo(move) {
     setCurrentMove(move);
   }
 
-  // lista de objetos {move, square} do histórico
+  // obj list {move, square} of history
   const info_list =  history.map((squares, move) => ({ move, square: squares }));
 
-  // Renderizando a lista de botões
+  // Render buttom list 
   const render = info_list.map((item, index) => {
 
       // Calcula o índice visual do botão, subtrai de info_list ou então index de item
@@ -50,8 +63,17 @@ export default function Game() {
       );
     });
 
+  
+
+
   return (
     <div className="game">
+
+      {/*implement the navBar component*/}
+      <div className="nav-container">
+        <NavBar menuList={listOptions} logoUrl={imageUrl} />
+      </div>
+
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>

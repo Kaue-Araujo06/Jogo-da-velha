@@ -135,6 +135,61 @@ body{
   background-color: #84e989;
 }
 
+/*nav css (before switch to one css for each component)*/
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+}
 
+.nav-container > *{
+    font-weight: bold;
+    font-size: 16pt;
+}
 
+.list{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ranking-container{
+    padding: 2%;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: #eff13f;
+}
+
+/* .account-container:hover, .home-container:hover{
+    transition: 0.5s ease-in;
+    transform: translateY(-0.1px);
+    cursor: pointer;
+} */
+
+.account p:hover, .home p:hover {
+    cursor: pointer;
+    text-shadow: 0.5px 1px 10px rgb(255, 255, 255);
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background: #dce3e4;
+    width: 64%;
+    height: 64px;
+    border-radius: 32px;
+}
+
+.navbar > * {
+    list-style: none;
+}
 
