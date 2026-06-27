@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function NavBar({logoUrl, menuList}) {
 
 
@@ -10,12 +12,12 @@ export default function NavBar({logoUrl, menuList}) {
                 {
                 //render one li for each item in menuList
                 menuList.map(option => (
-                    <div className={"item-container "+option.name + "-container"}>
+                    <div key={option.name} className={"item-container "+option.name + "-container"}>
                     <li 
-                    key={option.name} 
+                     
                     className={"nav-item " + option.name}
                     > 
-                        <p>{option.name}</p>
+                        <p><Link to={option.link} className={'link link-'+option.name}>{option.name}</Link></p>
                     </li>
                     </div>
                 ))}
